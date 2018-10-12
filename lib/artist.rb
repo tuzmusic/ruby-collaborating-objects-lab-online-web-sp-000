@@ -22,9 +22,6 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    # if @@all contains the artist, return it
-    # if not, create it
-
     existing_artist = @@all.find { |artist|
       artist.name == name
     }
