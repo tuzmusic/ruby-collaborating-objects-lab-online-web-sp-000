@@ -14,7 +14,7 @@ class Song
     song = Song.new(title)
     song.artist = Artist.find_or_create_by_name(artist)
     song.artist.add_song(song)
-    binding.pry
+    binding.pry # => check artist name and their songs
     song
   end
 
