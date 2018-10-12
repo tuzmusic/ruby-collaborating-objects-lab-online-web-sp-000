@@ -31,5 +31,5 @@ class Artist
     return existing_artist if existing_artist
 
     Artist.new(name)
-
+end
 end
