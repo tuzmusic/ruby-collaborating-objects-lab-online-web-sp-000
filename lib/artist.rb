@@ -30,7 +30,7 @@ def self.find_or_create_by_name(name)
   existing_artist = @@all.find { |artist|
     artist.name == name
   }
-  return  existing_artist if existing_artist
+  return existing_artist if existing_artist
 
   Artist.new(name)
 
