@@ -10,7 +10,7 @@ class MP3Importer
 
   def files
     x = Dir["#{path}/*.mp3"].each {|x| x.split('/').last}
-    binding.pry
+    # binding.pry
     x
   end
 end
