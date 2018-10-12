@@ -9,7 +9,8 @@ class MP3Importer
   end
 
   def files
-    Dir["#{path}/*.mp3"].each {|x| x.split('/').last}
-
+    x = Dir["#{path}/*.mp3"].each {|x| x.split('/').last}
+    binding.pry
+    x
   end
 end
