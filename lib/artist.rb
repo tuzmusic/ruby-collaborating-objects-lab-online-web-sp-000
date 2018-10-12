@@ -9,7 +9,7 @@ class Artist
     @songs = []
   end
 
-  def save(name)
+  def self.save(name)
     @@all << Artist.new(name)
   end
 
