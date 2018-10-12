@@ -10,8 +10,7 @@ class Artist
   end
 
   def save(name)
-    @@all = Artist.new(name)
-
+    @@all< Artist.new(name)
   end
 
   def add_song(song)
