@@ -9,6 +9,11 @@ class MP3Importer
   end
 
   def files
-    Dir["#{path}/*.mp3"].map {|x| x.split('/').last}
+    Dir["#{@path}/*.mp3"].map {|x| x.split('/').last}
   end
+
+  def import
+    @files.each_char { |chr|  }
+  end
+
 end
