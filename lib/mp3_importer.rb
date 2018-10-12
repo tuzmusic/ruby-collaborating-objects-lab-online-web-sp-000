@@ -1,3 +1,5 @@
+require 'pry'
+
 class MP3Importer
 
   attr_accessor :path
@@ -6,4 +8,7 @@ class MP3Importer
     @path = path
   end
 
+  def files
+    dir = Dir[@path]
+  end
 end
