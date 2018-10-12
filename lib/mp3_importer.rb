@@ -9,7 +9,7 @@ class MP3Importer
   end
 
   def files
-    Dir["#{path}/*.mp3"].each {|x| x.chomp(".mp3")}
+    Dir["#{path}/*.mp3"].each {|x| x.split('/').last}
 
   end
 end
