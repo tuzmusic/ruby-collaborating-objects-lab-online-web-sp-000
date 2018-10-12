@@ -2,7 +2,7 @@ class Song
 
   attr_accessor :name, :artist
 
-  def initialize(name, artist)
+  def initialize(name)
     @name = name
     @artist = artist
   end
@@ -11,7 +11,8 @@ class Song
     components = filename.split(" - ")
     artist = components[0]
     title = components[1]
-    Song.new(title, artist)
+    song = Song.new(title)
+    song.artist = Artist.find_or_create_by_name(artist)
   end
 
 
