@@ -10,5 +10,6 @@ class MP3Importer
 
   def files
     dir = Dir[@path]
+    binding.pry
   end
 end
