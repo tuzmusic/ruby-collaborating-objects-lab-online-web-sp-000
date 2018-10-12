@@ -11,11 +11,10 @@ class Song
     components = filename.split(" - ")
     artist = components[0]
     title = components[1]
-    binding.pry
     song = Song.new(title)
     song.artist = Artist.find_or_create_by_name(artist)
-    song
     song.artist.add_song(song)
+    song
   end
 
 end
