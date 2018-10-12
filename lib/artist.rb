@@ -26,8 +26,9 @@ class Artist
       artist.name == name
     }
     return existing_artist if existing_artist
-
-    Artist.new(name)
+    artist = Artist.new(name)
+    artist.save
+    artist
   end
 
   def print_songs
