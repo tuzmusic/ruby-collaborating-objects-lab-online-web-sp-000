@@ -14,6 +14,7 @@ class Song
     song = Song.new(title)
     song.artist = Artist.find_or_create_by_name(artist)
     song
+    song.artist.songs << song
   end
 
 
